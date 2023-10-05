@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_application_6/widgets/constants.dart';
 import 'package:flutter_svg_provider/flutter_svg_provider.dart';
 
+import 'homepage.dart';
+
 class RegisterPage extends StatefulWidget {
   @override
   _RegisterPageState createState() => _RegisterPageState();
@@ -98,7 +100,12 @@ class _RegisterPageState extends State<RegisterPage> {
                     ),
                     MyTextButton(
                       buttonName: 'Register',
-                      onTap: () {},
+                      onTap: () {
+                        Navigator.pushReplacement(
+                          context,
+                          MaterialPageRoute(builder: (context) => HomePage()),
+                        );
+                      },
                       bgColor: Colors.white,
                       textColor: Colors.black87,
                     )

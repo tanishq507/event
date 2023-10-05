@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import '../screens/screen.dart';
 import 'package:flutter_svg_provider/flutter_svg_provider.dart';
 import '../widgets/constants.dart';
+import 'homepage.dart';
 
 class SignInPage extends StatefulWidget {
   @override
@@ -106,7 +107,12 @@ class _SignInPageState extends State<SignInPage> {
                     ),
                     MyTextButton(
                       buttonName: 'Sign In',
-                      onTap: () {},
+                      onTap: () {
+                        Navigator.pushReplacement(
+                          context,
+                          MaterialPageRoute(builder: (context) => HomePage()),
+                        );
+                      },
                       bgColor: Colors.white,
                       textColor: Colors.black87,
                     ),

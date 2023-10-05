@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
+//import 'package:flutter_application_6/screens/homepage.dart';
+import 'package:flutter_application_6/screens/screen.dart';
 import 'package:flutter_application_6/widgets/constants.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-import './screens/screen.dart';
+//import './screens/screen.dart';
 
 void main() {
   runApp(MyApp());
